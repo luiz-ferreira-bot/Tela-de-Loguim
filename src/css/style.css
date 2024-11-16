@@ -1,5 +1,15 @@
-*{
+@charset "UTF-8";
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* 
+    Paleta de cores
+    Verde : #49a09d
+    Lilás: #5f2c82
+ */
