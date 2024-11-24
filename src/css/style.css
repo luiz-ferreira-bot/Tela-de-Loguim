@@ -42,6 +42,7 @@ section#login {
 
     transition: width .3s, heigth .3s;
     transition-timing-function: ease;
+    transform: translate(-50, -50);
 }
 
 section#login>div#imagem {
@@ -58,34 +59,56 @@ section#login>div#formulario {
     padding: 10px;
 }
 
-div#formulario > h1 {
+div#formulario>h1 {
     text-align: center;
     margin-bottom: 10px;
     font-size: 30px;
 }
 
-div#formulario > p{
+div#formulario>p {
     font-size: 0.8em;
 }
 
-.campo{
+form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 8px;
     height: 40px;
     margin: 5px 0px;
-    
+
 }
 
-::placeholder{
-    text-align: center;
-}
 
-div .campo label{
+div .campo label {
     display: none;
 }
 
-.submit{
+div .campo > i {
+    color: white;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #49a09d;
+    font-size: 1em;
+    width: calc(100% - 45px); 
+    border: 0;
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+}
+
+form > input[type=submit] {
     display: block;
     font-size: 1em;
     width: 100%;
@@ -94,15 +117,16 @@ div .campo label{
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
-    transition: 0.3s ease-in-out;
     cursor: pointer;
+    /* margin-top: 10px; */
+    /* transition: 0.3s ease-in-out; */
 }
 
-.submit:hover{
+submit:hover {
     background-color: #5f2c82;
 }
-.botao{
+
+form > a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
@@ -117,10 +141,16 @@ div .campo label{
     margin-top: 5px;
     
 }
-.botao:hover{
-background-color: #6cd3cf;
-color: white;
+
+.botao:hover {
+    background-color: #6cd3cf;
+    color: white;
 }
-.botao i{
+
+.botao i {
     font-size: 0.8em;
+}
+
+::placeholder {
+    text-align: center;
 }
